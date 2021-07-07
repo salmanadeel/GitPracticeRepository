@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UPSTestSuite]">
+  <test thread-count="5" name="UPSRegressionTest(failed)">
+    <groups>
+      <run>
+        <include name="RegressionTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="rediff.pack.ReddifTestRunner">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="rediffMailAlertTest"/>
+          <include name="beforeMetod"/>
+        </methods>
+      </class> <!-- rediff.pack.ReddifTestRunner -->
+    </classes>
+  </test> <!-- UPSRegressionTest(failed) -->
+</suite> <!-- Failed suite [UPSTestSuite] -->
