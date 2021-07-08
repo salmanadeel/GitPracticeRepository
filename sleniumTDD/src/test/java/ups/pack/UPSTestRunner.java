@@ -60,6 +60,12 @@ public class UPSTestRunner extends BrowserDrivers {
 	public void mDemoTest2() {
 		System.out.println("my demo test 2 executed....!");
 	}
+
+
+@Test(priority = 1, groups = {"RegressionTest"})
+public void mDemoTest3() {
+	System.out.println("changes made just to chack....!");
+}
 	
 	@AfterMethod(alwaysRun = true)
    void afterMethod() {
